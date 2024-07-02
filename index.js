@@ -13,7 +13,7 @@ const Password = process.env.mongodbpassword;
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
-mongoose.connect(`mongodb+srv://${Username}:${Password}@cluster0.f976wkg.mongodb.net/register`);
+mongoose.connect(`mongodb+srv://${Username}:${Password}@cluster0.pvlbsey.mongodb.net/Registrations`, {});
 
 const RegistrationSchema = new mongoose.Schema({
     name: String,
